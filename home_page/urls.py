@@ -6,6 +6,7 @@ urlpatterns = [
     # path('', views.view1),
     path('', views.home, name="home"),
     path('blog/', views.blog, name="blog"),
+    path('homeMessageSucess/',views.homeMessageSucess,name="homeMessageSucess"),
     # path('contactform/contact.html', views.contact, name="contact"),
     # path('conformMessage/', views.conformMessage, name="conformMessage"),
 

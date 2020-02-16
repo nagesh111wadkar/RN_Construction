@@ -24,7 +24,7 @@ def home(request):
             form.save()
             # return HttpResponseRedirect('/home/')
             # return redirect('success')
-            return  HttpResponseRedirect('')
+            return HttpResponseRedirect('/homeMessageSucess/')
 
 
     else:
@@ -37,5 +37,18 @@ def home(request):
 #     return render(request, 'email.html', {'obj': obj})
 
 
-def contact(request):
-    return render(request,'contact.html')
+# def contact(request):
+#     return render(request,'contact.html')
+
+def homeMessageSucess(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # return HttpResponseRedirect('/home/')
+            # return redirect('success')
+            return HttpResponseRedirect('/homeMessageSucess/')
+
+    else:
+        form = ContactForm()
+    return render(request, 'homeMessageSucess.html', {'form': form})

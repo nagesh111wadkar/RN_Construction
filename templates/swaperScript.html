@@ -1,0 +1,55 @@
+{% block content %}
+<div class="container-fluid">
+	<div class="section-counter ">
+		<div style="padding: 70px; padding-top: 5px; padding-bottom: 10px;" class="swiper-container">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="https://www.google.com">
+							<img src="/static/images/consrtuction-final-price.jpg" width="100%" height="100%" alt="constructon-price-final">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="https://www.google.com">
+							<img src="/static/images/interiors-final-price.jpg" width="100%" height="100%" alt="interiors-price-final">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="https://www.google.com">
+							<img src="/static/images/Renovation-final-price.jpg" width="100%" height="100%" alt="renovation-price-final">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="https://www.google.com">
+							<img src="/static/images/Pinting-final-price.jpg" width="100%" height="100%" alt="renovation-price-final">
+						</a>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- Add Arrows -->
+			<div class=" swiper-button-next"></div>
+			<div class=" swiper-button-prev"></div>
+		</div>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+			      slidesPerView: 3,
+			      spaceBetween: 30,
+			      slidesPerGroup: 3,
+			      loop: true,
+			      loopFillGroupWithBlank: true,
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+		</script>
+	</div>
+</div>
+{% endblock %}
