@@ -109,7 +109,7 @@
 							<p class="lead">1998 saw the rise of a new star in Pune’s construction fraternity, our illustrious founder Mr. Ramchandra T. Wadkar who took upon himself the task of building a unique legacy of reconstructing the Indian real estate industry. Fired by the desire to create well designed, quality homes for every income bracket, our journey from modest beginnings to a highly reputed company lies in his vision of wholehearted commitment to our valued customers. ‘Quality not quantity’ was our founder’s motto as he strove tirelessly for three decades to keep his customers happy without compromising on any aspect of real estate construction. This belief has become the formidable strength of RN Construction Company that today, places us amongst the best construction companies in Pune. We are proud of the immense goodwill and referrals our projects have consistently garnered leading to our growth and success. Today, Rohit R. Wadkar and Nilesh Mule, the two dynamic Patners who spearhead RN Construction have set their sights even higher. Building on their founder legacy and immense goodwill, they have put RN Construction on the map by bringing in the latest, contemporary approach to planning, design and project management.</p>
 						</div>
 						<br>
-						<button class="btn btn-default btn-lg">Know More ></button>
+						<button href="https://www.w3schools.com" target="_blank" class="btn btn-default btn-lg">Know More</button>
 					</div>
 				</div>
 			</div>
@@ -118,7 +118,11 @@
 	<!-- Container (About Section)END-->
 	<!-- Contruction interiors renovation-->
 	<!-- Swiper -->
-	<section id="About">{% include 'swaperScript.html' %} {% block content %} {% endblock %}</section>
+	<section id="About">
+        {% include 'swaperScript.html' %}
+        {% block content %}
+        {% endblock %}
+    </section>
 	<!-- Contruction interiors renovation END-->
 	<!-- Swiper END-->
 	<!-- Container Our Values -->
@@ -250,7 +254,7 @@
 	<!-- Our promise Section END -->
 	<!-- Banner image-->
 	<div id="Service">
-		<a href="https://www.google.com" target="_blank">
+		<a href="{% url 'CommingSoon' %}" target="_blank">
 			<img src="/static/images/poster1.jpg" width="100%" padding="0" margin="0">
 		</a>
 	</div>
@@ -866,7 +870,7 @@
 							</div>
 							<h3 class="card-title"><a href="{% url 'blog' %}">See more ideas about Interior Design</a></h3>
 							<p class="card-description">With change being the only constant, we humans tend to ‘change’ things periodically and that applies to all aspects of life, but for now we’ll concentrate on changes in the renovation industry!</p>
-						</div>
+						</div>F
 						<div class="card-footer">
 							<div class="post-author">
 								<a href="#">

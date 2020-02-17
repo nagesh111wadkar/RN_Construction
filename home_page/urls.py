@@ -9,7 +9,7 @@ urlpatterns = [
     path('homeMessageSucess/',views.homeMessageSucess,name="homeMessageSucess"),
     # path('contactform/contact.html', views.contact, name="contact"),
     # path('conformMessage/', views.conformMessage, name="conformMessage"),
-
+    path('CommingSoon/', views.CommingSoon, name="CommingSoon"),
 
 ]
 

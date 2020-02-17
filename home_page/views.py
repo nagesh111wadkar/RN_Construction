@@ -17,6 +17,9 @@ def blog(request):
     return render(request, "blog-single.html")
 
 
+def CommingSoon(request):
+    return render(request, "CommingSoon.html")
+
 def home(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
