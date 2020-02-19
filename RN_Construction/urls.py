@@ -21,10 +21,8 @@ from home_page.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home_page.urls')),
-    # path('blog/', include('home_page.urls')),
     path('home/', include('home_page.urls')),
-    # path(r'^contact/$', formDisplay),
-    # path(r'^home_page/$', include('home_page.urls')),
+
 
 ]
 
