@@ -1,2 +1,1 @@
-python
-django
+Django==5.0.6
